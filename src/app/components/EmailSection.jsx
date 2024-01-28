@@ -1,7 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import GithubIcon from "../../../public/github-icon.svg";
-import LinkedinIcon from "../../../public/linkedin-icon.svg";
+import NotionIcon from "../../../public/notion-icon.svg";
+import BlogIcon from "../../../public/blog-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -55,12 +56,32 @@ const EmailSection = () => {
           open. Whether you have a question or just want to say hi, I&apos;ll
           try my best to get back to you!
         </p>
-        <div className="socials flex flex-row gap-2">
-          <Link href="github.com">
+        <div className="socials flex flex-row gap-2 items-center">
+          <Link href="https://github.com/JlnHyeok" target="_blank">
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
-          <Link href="linkedin.com">
-            <Image src={LinkedinIcon} alt="Linkedin Icon" />
+          <Link
+            href="https://portpo.notion.site/portpo/59fa3129f31a4fa5818ea1459af789d7"
+            target="_blank"
+          >
+            <div className="w-10 h-10 flex justify-center items-center overflow-hidden rounded-full bg-white">
+              <Image
+                src={NotionIcon}
+                alt="Notion Icon"
+                className="bg-white"
+                width={30}
+              />
+            </div>
+          </Link>
+          <Link href="https://my-developement-stew.tistory.com" target="_blank">
+            <div className="w-10 h-10 ml-[2px] flex justify-center items-center overflow-hidden rounded-full bg-white">
+              <Image
+                src={BlogIcon}
+                alt="Blog Icon"
+                className="bg-white"
+                width={30}
+              />
+            </div>
           </Link>
         </div>
       </div>
