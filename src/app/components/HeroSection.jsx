@@ -26,11 +26,11 @@ const HeroSection = () => {
                 1000,
                 "Web Developer",
                 1000,
-                "Frontend Engineer",
+                "F.E Engineer",
                 1000,
               ]}
               wrapper="span"
-              speed={50}
+              speed={30}
               repeat={Infinity}
             />
           </h1>
