@@ -51,18 +51,32 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-white pt-10" id="about">
+    <section className="text-white md:pt-10" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about-image.png" width={500} height={500} />
+        <Image
+          src="/images/about-image.png"
+          width={500}
+          height={500}
+          className="rounded-xl mx-auto"
+        />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I am a full stack web developer with a passion for creating
+            ◈ Full Stack Enginner를 지향하는 Front-End Enginner 입니다.
+            <br />
+            ◈ 한번 빠져들면 깊이 파고 들어갑니다.
+            <br />
+            ◈ UX를 고려한 UI를 만들려고 노력합니다.
+            <br />
+            ◈ 새로운 기술들을 꾸준히 받아들이려고 노력합니다.
+            <br />
+            ◈클린코드를 지향하지만, 기능구현을 최우선으로합니다.
+            {/* I am a full stack web developer with a passion for creating
             interactive and responsive web applications. I have experience
             working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
             Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
             looking to expand my knowledge and skill set. I am a team player and
-            I am excited to work with others to create amazing applications.
+            I am excited to work with others to create amazing applications. */}
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
