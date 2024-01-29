@@ -54,7 +54,7 @@ const AboutSection = () => {
     <section className="text-white md:pt-10" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image
-          src="/images/about-image.png"
+          src="/images/about-image.jpeg"
           width={500}
           height={500}
           className="rounded-xl mx-auto"
@@ -68,9 +68,8 @@ const AboutSection = () => {
             <br />
             ◈ UX를 고려한 UI를 만들려고 노력합니다.
             <br />
-            ◈ 새로운 기술들을 꾸준히 받아들이려고 노력합니다.
-            <br />
-            ◈클린코드를 지향하지만, 기능구현을 최우선으로합니다.
+            ◈ 새로운 기술들에 흥미를 가지며 꾸준히 받아들이려고 노력합니다.
+            <br />◈ 클린코드를 지향하지만, 기능구현을 최우선으로합니다.
             {/* I am a full stack web developer with a passion for creating
             interactive and responsive web applications. I have experience
             working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,

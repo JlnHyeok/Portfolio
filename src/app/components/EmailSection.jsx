@@ -57,12 +57,17 @@ const EmailSection = () => {
           try my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-2 items-center">
-          <Link href="https://github.com/JlnHyeok" target="_blank">
+          <Link
+            href="https://github.com/JlnHyeok"
+            target="_blank"
+            className="hover:scale-110 duration-300"
+          >
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
           <Link
             href="https://portpo.notion.site/portpo/59fa3129f31a4fa5818ea1459af789d7"
             target="_blank"
+            className="hover:scale-110 duration-300"
           >
             <div className="w-10 h-10 flex justify-center items-center overflow-hidden rounded-full bg-white">
               <Image
@@ -73,7 +78,11 @@ const EmailSection = () => {
               />
             </div>
           </Link>
-          <Link href="https://my-developement-stew.tistory.com" target="_blank">
+          <Link
+            href="https://my-developement-stew.tistory.com"
+            target="_blank"
+            className="hover:scale-110 duration-300"
+          >
             <div className="w-10 h-10 ml-[2px] flex justify-center items-center overflow-hidden rounded-full bg-white">
               <Image
                 src={BlogIcon}
