@@ -14,6 +14,7 @@ const projectsData = [
     gitUrl: "https://github.com/JlnHyeok/car-board",
     previewUrl: "https://car-board-practice.herokuapp.com",
   },
+
   {
     id: 2,
     title: "[Roylabs] Cloud Monitoring System",
@@ -25,6 +26,7 @@ const projectsData = [
       "https://portpo.notion.site/Roylabs-Cloud-Monitoring-System-c18c14271e834269bded61b8c66794a5",
     previewUrl: "https://cloud-monitoring-demo.netlify.app/monitoring",
   },
+
   {
     id: 3,
     title: "[Roylabs] Edge Monitoring System",
@@ -67,7 +69,7 @@ const projectsData = [
 const ProjectsSection = () => {
   const [tag, setTag] = useState("Web");
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref, { once: true, amount: 0.5 });
 
   const handleTagChange = (newTag) => {
     setTag(newTag);

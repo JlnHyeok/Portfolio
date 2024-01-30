@@ -1,13 +1,27 @@
 "use client";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import GithubIcon from "../../../public/github-icon.svg";
 import NotionIcon from "../../../public/notion-icon.svg";
 import BlogIcon from "../../../public/blog-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
+import { useInView, motion } from "framer-motion";
 
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
+  const scrollRef = useRef();
+  const LeftIsInView = useInView(scrollRef, { once: false, amount: 0.3 });
+  const RightIsInView = useInView(scrollRef, { once: false, amount: 0.5 });
+
+  const LeftCardVariants = {
+    initial: { y: 0, x: 0, scale: 0, opacity: 0 },
+    animate: { y: 0, x: 0, opacity: 1, scale: 1 },
+  };
+
+  const RightCardVariants = {
+    initial: { y: 1000, x: 0, opacity: 0 },
+    animate: { y: 0, x: 0, opacity: 1 },
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -43,10 +57,17 @@ const EmailSection = () => {
   return (
     <section
       id="contact"
+      ref={scrollRef}
       className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
     >
       <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
-      <div className="z-10">
+      <motion.div
+        className="z-10"
+        variants={LeftCardVariants}
+        initial="initial"
+        animate={LeftIsInView ? "animate" : "initial"}
+        transition={{ duration: 0.6 }}
+      >
         <h5 className="text-xl font-bold text-white my-2">
           Let&apos;s Connect
         </h5>
@@ -93,8 +114,13 @@ const EmailSection = () => {
             </div>
           </Link>
         </div>
-      </div>
-      <div>
+      </motion.div>
+      <motion.div
+        variants={RightCardVariants}
+        initial="initial"
+        animate={RightIsInView ? "animate" : "initial"}
+        transition={{ duration: 0.6 }}
+      >
         {emailSubmitted ? (
           <p className="text-green-500 text-sm mt-2">
             Email sent successfully!
@@ -155,7 +181,7 @@ const EmailSection = () => {
             </button>
           </form>
         )}
-      </div>
+      </motion.div>
     </section>
   );
 };
