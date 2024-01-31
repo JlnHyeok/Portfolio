@@ -63,7 +63,7 @@ const HeroSection = () => {
             scale: 1.2,
             transition: { duration: 0.1 },
           }}
-          whileTap={{ scale: 0.5 }}
+          whileTap={{ scale: 0.8 }}
           transition={{ duration: 0.2 }}
           href="#contact"
           className="px-6 text-center inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white hover:scale-105 duration-300"
