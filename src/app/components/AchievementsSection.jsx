@@ -15,36 +15,40 @@ const FrontAchievmentsList = [
     metric: "Html",
     value: "90",
     tag: "F/E",
-    postfix: "",
+    postfix: "%",
   },
   {
     metric: "Css",
     value: "85",
     tag: "F/E",
+    postfix: "%",
   },
   {
     metric: "React",
     value: "85",
     tag: "F/E",
+    postfix: "%",
   },
   {
     metric: "Next",
     value: "85",
     tag: "F/E",
+    postfix: "%",
   },
   {
     metric: "SvelteKit",
     value: "90",
     tag: "F/E",
+    postfix: "%",
   },
-  { metric: "ExpressJs", value: "75", tag: "B/E" },
-  { metric: "mySql", value: "75", tag: "B/E" },
-  { metric: "MongoDB", value: "70", tag: "B/E" },
-  { metric: "Js", value: "85", tag: "Lang" },
-  { metric: "Ts", value: "88", tag: "Lang" },
-  { metric: "Go", value: "65", tag: "Lang" },
-  { metric: "Python", value: "70", tag: "Lang" },
-  { metric: "C#", value: "75", tag: "Lang" },
+  { metric: "ExpressJs", value: "75", tag: "B/E", postfix: "%" },
+  { metric: "mySql", value: "75", tag: "B/E", postfix: "%" },
+  { metric: "MongoDB", value: "70", tag: "B/E", postfix: "%" },
+  { metric: "Js", value: "85", tag: "Lang", postfix: "%" },
+  { metric: "Ts", value: "88", tag: "Lang", postfix: "%" },
+  { metric: "Go", value: "65", tag: "Lang", postfix: "%" },
+  { metric: "Python", value: "70", tag: "Lang", postfix: "%" },
+  { metric: "C#", value: "75", tag: "Lang", postfix: "%" },
 ];
 
 const AchievementsSection = () => {
@@ -57,7 +61,7 @@ const AchievementsSection = () => {
   };
 
   return (
-    <div className="py-8 px-0 xl:gap-16 sm:py-16 sm:px-8 xl:px-16 ">
+    <div className="py-8 px-0 sm:py-16 sm:px-8 xl:px-16 xl:gap-16">
       <h2 className="text-center text-4xl font-bold text-white mt-4 ">
         Skills
       </h2>
@@ -78,23 +82,23 @@ const AchievementsSection = () => {
           isSelected={tag === "Lang"}
         />
       </div>
-      <div className="sm:border-[#33353F] w-full sm:border rounded-xl sm:py-8 sm:px-16 flex sm:flex-row justify-center items-center md:gap-20">
+      <div className="glass sm:border-[#33353F] w-full sm:border rounded-xl sm:py-8 sm:px-16 flex sm:flex-row justify-center items-center lg:gap-20">
         {filteredAchievements.map((achievement, index) => {
           return (
             <div
               key={index}
-              className="flex flex-col items-center justify-center mx-4 my-4 sm:my-0"
+              className="flex flex-col items-center justify-center sm:gap-2 mx-4 my-4 sm:my-0"
             >
-              <p className="text-[#ADB7BE] font-bold text-base">
+              <p className="text-[#ADB7BE] font-bold text-[0.85rem] xl:text-2xl md:text-xl">
                 {achievement.metric}
               </p>
-              <h2 className="text-white text-2xl sm:text-4xl font-bold flex flex-row">
+              <h2 className="text-white text-base xl:text-4xl md:text-xl font-bold flex flex-row">
                 {achievement.prefix}
                 <AnimatedNumbers
                   includeComma
                   animateToNumber={parseInt(achievement.value)}
                   locale="en-US"
-                  className="text-white text-2xl sm:text-4xl font-bold"
+                  className="text-white text-xl xl:text-4xl md:text-xl font-bold"
                   configs={(_, index) => {
                     return {
                       mass: 1,
