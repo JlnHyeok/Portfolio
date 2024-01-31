@@ -69,7 +69,7 @@ const projectsData = [
 const ProjectsSection = () => {
   const [tag, setTag] = useState("Web");
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: false, amount: 0.5 });
+  const isInView = useInView(ref, { once: false, amount: 0.3 });
 
   const handleTagChange = (newTag) => {
     setTag(newTag);

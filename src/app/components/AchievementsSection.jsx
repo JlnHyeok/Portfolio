@@ -41,7 +41,7 @@ const FrontAchievmentsList = [
   { metric: "mySql", value: "75", tag: "B/E" },
   { metric: "MongoDB", value: "70", tag: "B/E" },
   { metric: "Js", value: "85", tag: "Langauge" },
-  { metric: "Ts", value: "85", tag: "Langauge" },
+  { metric: "Ts", value: "88", tag: "Langauge" },
   { metric: "Go", value: "65", tag: "Langauge" },
   { metric: "Python", value: "70", tag: "Langauge" },
   { metric: "C#", value: "75", tag: "Langauge" },
@@ -58,7 +58,7 @@ const AchievementsSection = () => {
 
   return (
     <div className="py-8 px-0 xl:gap-16 sm:py-16 sm:px-8 xl:px-16 ">
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
+      <h2 className="text-center text-4xl font-bold text-white mt-4 ">
         Skills
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
@@ -78,7 +78,7 @@ const AchievementsSection = () => {
           isSelected={tag === "Langauge"}
         />
       </div>
-      <div className="sm:border-[#33353F] w-full sm:border rounded-md sm:py-8 sm:px-16 flex sm:flex-row justify-center items-center md:justify-between">
+      <div className="sm:border-[#33353F] w-full sm:border rounded-xl sm:py-8 sm:px-16 flex sm:flex-row justify-center items-center md:gap-20">
         {filteredAchievements.map((achievement, index) => {
           return (
             <div
