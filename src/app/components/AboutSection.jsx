@@ -59,7 +59,7 @@ const AboutSection = () => {
   const scrollRef = useRef();
   const isInView = useInView(scrollRef, { once: false, amount: 0.3 });
   const cardVariants = {
-    initial: { y: 50, x: 0, scale: 0, opacity: 0 },
+    initial: { y: 100, x: 0, scale: 0, opacity: 0 },
     animate: { y: 0, x: 0, opacity: 1, scale: 1 },
   };
 
@@ -70,7 +70,7 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-white md:pt-10" id="about">
+    <section className="text-white md:py-20" id="about">
       <motion.div
         ref={scrollRef}
         whileInView="visible"

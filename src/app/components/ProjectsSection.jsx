@@ -69,7 +69,7 @@ const projectsData = [
 const ProjectsSection = () => {
   const [tag, setTag] = useState("Web");
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.5 });
+  const isInView = useInView(ref, { once: false, amount: 0.5 });
 
   const handleTagChange = (newTag) => {
     setTag(newTag);
@@ -80,7 +80,7 @@ const ProjectsSection = () => {
   );
 
   const cardVariants = {
-    initial: { y: 50, opacity: 0 },
+    initial: { y: 30, opacity: 0 },
     animate: { y: 0, opacity: 1 },
   };
 

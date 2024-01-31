@@ -37,22 +37,6 @@ const HeroSection = () => {
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
             안녕하십니까, 항상 효율을 추구하는 개발자, 허진혁입니다.
           </p>
-          <div>
-            <a
-              href="#contact"
-              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white hover:scale-105 duration-300"
-            >
-              Hire Me
-            </a>
-            {/* <Link
-              href="/"
-              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
-            >
-              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                Download CV
-              </span>
-            </Link> */}
-          </div>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -70,6 +54,30 @@ const HeroSection = () => {
             />
           </div>
         </motion.div>
+      </div>
+      <div className="mt-10 md:mt-0 w-full">
+        <motion.a
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          whileHover={{
+            scale: 1.2,
+            transition: { duration: 0.1 },
+          }}
+          whileTap={{ scale: 0.5 }}
+          transition={{ duration: 0.2 }}
+          href="#contact"
+          className="px-6 text-center inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white hover:scale-105 duration-300"
+        >
+          Hire Me
+        </motion.a>
+        {/* <Link
+              href="/"
+              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
+            >
+              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+                Download CV
+              </span>
+            </Link> */}
       </div>
     </section>
   );
