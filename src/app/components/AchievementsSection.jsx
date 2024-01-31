@@ -40,11 +40,11 @@ const FrontAchievmentsList = [
   { metric: "ExpressJs", value: "75", tag: "B/E" },
   { metric: "mySql", value: "75", tag: "B/E" },
   { metric: "MongoDB", value: "70", tag: "B/E" },
-  { metric: "Js", value: "85", tag: "Langauge" },
-  { metric: "Ts", value: "88", tag: "Langauge" },
-  { metric: "Go", value: "65", tag: "Langauge" },
-  { metric: "Python", value: "70", tag: "Langauge" },
-  { metric: "C#", value: "75", tag: "Langauge" },
+  { metric: "Js", value: "85", tag: "Lang" },
+  { metric: "Ts", value: "88", tag: "Lang" },
+  { metric: "Go", value: "65", tag: "Lang" },
+  { metric: "Python", value: "70", tag: "Lang" },
+  { metric: "C#", value: "75", tag: "Lang" },
 ];
 
 const AchievementsSection = () => {
@@ -74,8 +74,8 @@ const AchievementsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Langauge"
-          isSelected={tag === "Langauge"}
+          name="Lang"
+          isSelected={tag === "Lang"}
         />
       </div>
       <div className="sm:border-[#33353F] w-full sm:border rounded-xl sm:py-8 sm:px-16 flex sm:flex-row justify-center items-center md:gap-20">
