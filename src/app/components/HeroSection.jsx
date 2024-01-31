@@ -35,7 +35,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            안녕하십니까, 항상 효율을 추구하는 개발자, 허진혁입니다.
+            안녕하십니까. 항상 효율을 추구하는 개발자, 허진혁입니다.
           </p>
         </motion.div>
         <motion.div
