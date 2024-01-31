@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
         />
         <meta
           property="og:image"
-          content="https://jinhyeok-portfolio.netlify.app/images/about-image.jpeg"
+          content="https://opengraph.b-cdn.net/production/documents/e950539f-a16f-44a0-9846-99fc28880aa3.jpg?token=PiXT_40Jg38zF7mQyI4-_ZfNLyRHuXn0irl4iJ5uLO4&height=512&width=512&expires=33242710838"
         />
 
         {/* <!-- Twitter Meta Tags --> */}
@@ -52,7 +52,7 @@ export default function RootLayout({ children }) {
         />
         <meta
           name="twitter:image"
-          content="https://jinhyeok-portfolio.netlify.app/images/about-image.jpeg"
+          content="https://opengraph.b-cdn.net/production/documents/e950539f-a16f-44a0-9846-99fc28880aa3.jpg?token=PiXT_40Jg38zF7mQyI4-_ZfNLyRHuXn0irl4iJ5uLO4&height=512&width=512&expires=33242710838"
         />
       </Head>
       <body className={inter.className}>{children}</body>
