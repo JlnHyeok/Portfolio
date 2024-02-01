@@ -28,11 +28,11 @@
 
 .background span:nth-child(0) {
   color: #632ac6;
-  top: 63%;
-  left: 37%;
-  animation-duration: 32s;
-  animation-delay: -9s;
-  transform-origin: 7vw 18vh;
+  top: 83%;
+  left: 57%;
+  animation-duration: 12s;
+  animation-delay: -39s;
+  transform-origin: 1vw 2vh;
   box-shadow: 120vmin 0 10.41453022684612vmin currentColor;
 }
 .background span:nth-child(1) {
@@ -90,7 +90,7 @@
   box-shadow: 80vmin 0 10.663433706534791vmin currentColor;
 }
 .background span:nth-child(7) {
-  color: #945c5c;
+  color: #543030;
   top: 61%;
   left: 10%;
   animation-duration: 11s;
