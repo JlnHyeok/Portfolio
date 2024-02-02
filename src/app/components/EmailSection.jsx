@@ -11,7 +11,7 @@ const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
   const scrollRef = useRef();
   const LeftIsInView = useInView(scrollRef, { once: false, amount: 0.5 });
-  const RightIsInView = useInView(scrollRef, { once: false, amount: 0.5 });
+  const RightIsInView = useInView(scrollRef, { once: false, amount: 0.65 });
 
   const LeftCardVariants = {
     initial: { y: 0, x: 0, scale: 0, opacity: 0 },
@@ -58,7 +58,7 @@ const EmailSection = () => {
     <section
       id="contact"
       ref={scrollRef}
-      className="grid md:grid-cols-2 my-12 py-12 md:py-[350px] gap-4 relative z-0"
+      className="grid md:grid-cols-2 my-12 py-12 md:py-[350px] gap-12 md:gap-4 relative z-0"
     >
       <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
       <motion.div
