@@ -6,10 +6,12 @@ import EmailSection from "./components/EmailSection";
 import Footer from "./components/Footer";
 import AchievementsSection from "./components/AchievementsSection";
 import Background from "./components/background/Background";
+import BackAnimation from "./components/background-animation/BackAnimation";
 
 export default function Home() {
   return (
     <>
+      <BackAnimation />
       <Background />
       <main className="flex min-h-screen flex-col bg-[#121212] ">
         <Navbar />
