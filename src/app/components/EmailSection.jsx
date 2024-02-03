@@ -94,8 +94,7 @@ const EmailSection = () => {
               <Image
                 src={NotionIcon}
                 alt="Notion Icon"
-                className="bg-white"
-                width={30}
+                className="bg-white w-7"
               />
             </div>
           </Link>
@@ -105,12 +104,7 @@ const EmailSection = () => {
             className="hover:scale-110 duration-300"
           >
             <div className="w-10 h-10 ml-[2px] flex justify-center items-center overflow-hidden rounded-full bg-white">
-              <Image
-                src={BlogIcon}
-                alt="Blog Icon"
-                className="bg-white"
-                width={30}
-              />
+              <Image src={BlogIcon} alt="Blog Icon" className="bg-white w-7" />
             </div>
           </Link>
         </div>
