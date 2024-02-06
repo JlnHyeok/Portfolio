@@ -4,7 +4,7 @@ Variables
 * {
   --line-color: white;
   --wave-color: #2d3250;
-  --dot-circle-animation-delay: 1.6s;
+  --dot-circle-animation-delay: 1.2s;
 }
 
 /*=================
@@ -354,7 +354,7 @@ animation01
   }
 }
 /*=================== 
-rhombus
+rhombus ( Current Animation Start )
 ====================*/
 .rhombus {
   position: absolute;
@@ -408,7 +408,7 @@ animation02
   margin: auto;
   width: 40vw;
   height: 40vw;
-  animation: rhombus_box 0.4s linear 1s forwards;
+  animation: rhombus_box 0.4s linear 0.7s forwards;
 }
 /* Dot Circle Side Box */
 .rhombus_item_wrapper {
@@ -434,12 +434,15 @@ animation02
   background-color: #fff;
   transform: rotate(45deg);
 }
+/* 
+Side Box Animation 
+*/
 .rhombus_item01_wrapper {
-  animation: rhombus_item01 0.5s linear 0.45s forwards;
+  animation: rhombus_item01 0.3s linear 0.3s forwards;
 }
 
 .rhombus_item02_wrapper {
-  animation: rhombus_item02 0.5s linear 0.45s forwards;
+  animation: rhombus_item02 0.3s linear 0.3s forwards;
 }
 @keyframes rhombus_item01 {
   0% {
@@ -772,7 +775,7 @@ name
   transform: translate(-50%, -50%);
   width: 30vw;
   height: 30vw;
-  animation: name 1s cubic-bezier(0.165, 0.84, 0.44, 1) 2.5s forwards;
+  animation: name 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.7s forwards;
   opacity: 0;
 }
 .name p {
@@ -818,7 +821,7 @@ name
   position: absolute;
   width: 100%;
   height: 100%;
-  animation: animation_final 0.3s linear 4s forwards;
+  animation: animation_final 0.3s linear 2.5s forwards;
 }
 
 @keyframes animation_final {
