@@ -7,16 +7,26 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "[개인 프로젝트] 중고차 거래 사이트",
-    description: "React / Express 기반의 중고차 거래 사이트",
-    image: "/images/projects/1.png",
+    title: "[SIDE PROJECT] Alterim AI",
+    description: "SvelteKit 사용하여 개발한 NFT 블록체인 서비스",
+    image: "/images/projects/0.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/JlnHyeok/car-board",
-    previewUrl: "https://car-board-practice.herokuapp.com",
+    gitUrl: "https://github.com/JlnHyeok/Alterim-LandingPage",
+    previewUrl: "https://alterim-test.netlify.app/",
+  },
+  {
+    id: 2,
+    title: "[Roylabs] Edge Monitoring System",
+    description: "SvelteKit 과 WebSocket 등을 사용한 실시간 모니터링 시스템",
+    image: "/images/projects/3.png",
+    tag: ["All", "Web"],
+    gitUrl: "/",
+    previewUrl:
+      "https://portpo.notion.site/Roylabs-Edge-Monitoring-System-e04b124c2988439dac6367d391e7f95e",
   },
 
   {
-    id: 2,
+    id: 3,
     title: "[Roylabs] Cloud Monitoring System",
     description:
       "SvelteKit 과 Polling 방식을 사용한 실시간 Cloud 모니터링 시스템",
@@ -26,17 +36,16 @@ const projectsData = [
       "https://portpo.notion.site/Roylabs-Cloud-Monitoring-System-c18c14271e834269bded61b8c66794a5",
     previewUrl: "https://cloud-monitoring-demo.netlify.app/monitoring",
   },
-
   {
-    id: 3,
-    title: "[Roylabs] Edge Monitoring System",
-    description: "SvelteKit 과 WebSocket 등을 사용한 실시간 모니터링 시스템",
-    image: "/images/projects/3.png",
+    id: 4,
+    title: "[개인 프로젝트] 중고차 거래 사이트",
+    description: "React / Express 기반의 중고차 거래 사이트",
+    image: "/images/projects/1.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl:
-      "https://portpo.notion.site/Roylabs-Edge-Monitoring-System-e04b124c2988439dac6367d391e7f95e",
+    gitUrl: "https://github.com/JlnHyeok/car-board",
+    previewUrl: "https://car-board-practice.herokuapp.com",
   },
+
   // {
   //   id: 4,
   //   title: "Food Ordering Application",
